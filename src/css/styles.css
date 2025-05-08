@@ -51,7 +51,7 @@
     font-weight: 200;
   }
 
-  .branding {
+  .row {
     display: flex;
     gap: 8px;
   }
