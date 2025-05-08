@@ -44,31 +44,15 @@
     font-weight: 200;
   }
   
-  .subtitle {
+  .title {
     font-size: 67px;
     color: #1A1A1A;
     font-weight: 200;
   }
-  
-  .decorations {
+
+  .branding {
     display: flex;
-    flex-direction: row;
     gap: 8px;
-  }
-  
-  .decoration-item {
-    width: 20px;
-    height: 20px;
-    background: #1A1A1A;
-    border-radius: 50%;
-  }
-  
-  .rotate-7deg {
-    transform: rotate(7deg);
-  }
-  
-  .rotate-173deg {
-    transform: rotate(-173deg);
   }
   
   .round {
@@ -110,10 +94,6 @@
   .link-item .icon {
     width: 30px;
     height: 30px;
-    background: #1A1A1A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   
   .link-item .link {
