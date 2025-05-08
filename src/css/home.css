@@ -1,46 +1,45 @@
-#works-wrapper {
-    gap: var(--spacing-sm)
+/* Common wrapper styles */
+[id$="-wrapper"] {
+    gap: var(--spacing-sm);
 }
 
-#works {
+/* Common section styles */
+#works,
+#info,
+#request {
     padding-left: 2rem;
-    gap: var(--spacing-xs)
 }
 
-#works a {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-xs);
-    line-height: 0.85;
-    font-size: 1.75em;
-    text-transform: uppercase;
-    padding: 1pt var(--spacing-xs) var(--spacing-xs) var(--spacing-xs);
-    border-left: 1pt solid var(--dark-1);
-    border-bottom: 1pt solid var(--dark-1);
+#logo {
+    padding-right: 2rem;
 }
 
-#info-wrapper {
-    gap: var(--spacing-sm)
-}
-
+#works,
 #info {
-    padding-left: 2rem;
-    gap: var(--spacing-xs)
+    gap: var(--spacing-xs);
 }
 
+/* Common link styles */
+#works a,
 #info a {
     display: flex;
     align-items: center;
     gap: var(--spacing-xs);
-    line-height: 0.85;
+
     font-size: 1.75em;
     text-transform: uppercase;
     padding: 1pt var(--spacing-xs) var(--spacing-xs) var(--spacing-xs);
-    border-left: 1pt solid var(--dark-1);
-    border-bottom: 1pt solid var(--dark-1);
+
+    border-left: 1pt solid var(--dark-2);
+    border-bottom: 1pt solid var(--dark-2);
 }
 
+/* Request section specific styles */
 #request {
-    padding-left: 2rem;
-    gap: var(--spacing-sm)
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+#request p {
+    font-size: 4em;
 }

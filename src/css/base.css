@@ -1,5 +1,6 @@
 :root {
   --dark-1: #1A1A1A;
+  --dark-2: #1a1a1a44;
   --bright-1: #EBEBEB;
   --br-lg: 12px;
   --spacing-xs: .5rem;
@@ -8,43 +9,64 @@
   --spacing-lg: 4rem;
 }
 
-@media (max-width: 1024px) {
-  html, body {
-    background: var(--bright-1) !important;
-    align-items: start !important;
-    justify-content: start !important;
-  }
-
-  .card {
-    border-radius: 0;
-    width: 100% !important;
-  }
-
-  .row {
-    flex-direction: column !important;
-  }
-}
-
+/* Reset & Base Styles */
 html, body {
+  margin: 0;
+  padding: 0;
   background: var(--dark-1);
   color: var(--dark-1);
-  transition: .3s;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
-.row {
+/* Layout & Flex Utilities */
+.row { display: flex; flex-direction: row; }
+.column { display: flex; flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-xs { gap: var(--spacing-xs); }
+.gap-sm { gap: var(--spacing-sm); }
+.gap-md { gap: var(--spacing-md); }
+.gap-lg { gap: var(--spacing-lg); }
+
+/* Width Utilities */
+.w-100 { width: 100%; }
+.w-2 { width: 2rem; }
+.w-3 { width: 3rem; }
+.w-4 { width: 4rem; }
+.h-100 { height: 100%; }
+.h-2 { height: 2rem; }
+.h-3 { height: 3rem; }
+.h-4 { height: 4rem; }
+
+/* Typography */
+.caps { text-transform: uppercase; }
+.text-center { text-align: center; }
+
+/* Components */
+.dash {
   display: flex;
-  flex-direction: row;
+  gap: 1px;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
+.rectangle {
+  width: 10px;
+  height: 1px;
+  background-color: var(--dark-1);
 }
 
-.w-100 {
-  width: 100%;
+.hidden {
+  opacity: 20%;
 }
 
-.caps {
-  text-transform: uppercase;
-}
+/* Spacing Utilities */
+.p-xs { padding: var(--spacing-xs); }
+.p-sm { padding: var(--spacing-sm); }
+.p-md { padding: var(--spacing-md); }
+.p-lg { padding: var(--spacing-lg); }
+
+.m-xs { margin: var(--spacing-xs); }
+.m-sm { margin: var(--spacing-sm); }
+.m-md { margin: var(--spacing-md); }
+.m-lg { margin: var(--spacing-lg); }
