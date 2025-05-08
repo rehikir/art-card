@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+}
+
+.card {
+  width: 1024px;
+  height: 640px;
+  background-color: var(--color-card);
+  padding-bottom: var(--spacing-md);
+  border-radius: var(--border-card);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  padding-left: var(--spacing-md);
+}
+
+.row {
+  width: 100%;
+  padding-right: var(--spacing-md);
+  display: flex;
+  justify-content: space-between;
+}
+
+.row-alt {
+    display: flex;
+    gap: 4px;
+}
+
+.section {
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}

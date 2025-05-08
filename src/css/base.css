@@ -1,0 +1,23 @@
+:root {
+  --color-bg: #1A1A1A;
+  --color-card: #EBEBEB;
+  --color-text: #1A1A1A;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 32px;
+  --border-card: 12px;
+  --border-subtle: rgba(25.5, 25.5, 25.5, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Martian Mono', monospace;
+  font-weight: 200;
+  background: var(--color-bg);
+}
