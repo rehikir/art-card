@@ -23,6 +23,7 @@ html, body {
 .row { display: flex; flex-direction: row; }
 .column { display: flex; flex-direction: column; }
 .items-center { align-items: center; }
+.items-right { justify-content: flex-end; }
 .justify-center { justify-content: center; }
 .justify-between { justify-content: space-between; }
 .gap-xs { gap: var(--spacing-xs); }
@@ -53,7 +54,7 @@ html, body {
 .rectangle {
   width: 10px;
   height: 1px;
-  background-color: var(--dark-1);
+  background-color: var(--dark-2);
 }
 
 .hidden {
