@@ -1,3 +1,14 @@
+.branding {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs)
+}
+
+.branding h1 {
+    font-size: 4.1875em;
+    line-height: 0.8;
+}
+
 .tip {
     display: flex;
     align-items: center;
@@ -5,5 +16,5 @@
 
 .dash {
     width: 2rem;
-    color: var(--bright-1)
+    letter-spacing: normal;
 }

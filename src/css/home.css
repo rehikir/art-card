@@ -1,0 +1,46 @@
+#works-wrapper {
+    gap: var(--spacing-sm)
+}
+
+#works {
+    padding-left: 2rem;
+    gap: var(--spacing-xs)
+}
+
+#works a {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    line-height: 0.85;
+    font-size: 1.75em;
+    text-transform: uppercase;
+    padding: 1pt var(--spacing-xs) var(--spacing-xs) var(--spacing-xs);
+    border-left: 1pt solid var(--dark-1);
+    border-bottom: 1pt solid var(--dark-1);
+}
+
+#info-wrapper {
+    gap: var(--spacing-sm)
+}
+
+#info {
+    padding-left: 2rem;
+    gap: var(--spacing-xs)
+}
+
+#info a {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    line-height: 0.85;
+    font-size: 1.75em;
+    text-transform: uppercase;
+    padding: 1pt var(--spacing-xs) var(--spacing-xs) var(--spacing-xs);
+    border-left: 1pt solid var(--dark-1);
+    border-bottom: 1pt solid var(--dark-1);
+}
+
+#request {
+    padding-left: 2rem;
+    gap: var(--spacing-sm)
+}

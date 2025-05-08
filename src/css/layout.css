@@ -1,10 +1,21 @@
 body {
+    min-height: 100vh;
+    min-width: 100vw;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .card {
     width: 64rem;
     background: var(--bright-1);
+    border-radius: var(--br-lg);
+    gap: var(--spacing-lg);
+}
+
+header {
+    align-items: start;
+    gap: var(--spacing-md);
 }

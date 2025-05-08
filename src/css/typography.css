@@ -1,4 +1,9 @@
 html, body {
-    font-family: 'Martian Mono';
+    font-family: "Martian Mono", monospace;
+    font-optical-sizing: auto;
     font-weight: 200;
+    font-style: normal;
+    letter-spacing: -12%;
+    font-variation-settings:
+        "wdth" 75;
 }

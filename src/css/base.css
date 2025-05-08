@@ -1,24 +1,50 @@
 :root {
   --dark-1: #1A1A1A;
   --bright-1: #EBEBEB;
-  --border-radius: 12px;
-  --spacing-xs: 8px;
-  --spacing-sm: 16px;
-  --spacing-md: 32px;
-}
-
-html, body {
-  background: var(--dark-1);
-  color: var(--dark-1)
+  --br-lg: 12px;
+  --spacing-xs: .5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
 }
 
 @media (max-width: 1024px) {
   html, body {
-    background: var(--bright-1);
+    background: var(--bright-1) !important;
+    align-items: start !important;
+    justify-content: start !important;
   }
+
+  .card {
+    border-radius: 0;
+    width: 100% !important;
+  }
+
+  .row {
+    flex-direction: column !important;
+  }
+}
+
+html, body {
+  background: var(--dark-1);
+  color: var(--dark-1);
+  transition: .3s;
 }
 
 .row {
   display: flex;
-  align-items: start;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.caps {
+  text-transform: uppercase;
 }
