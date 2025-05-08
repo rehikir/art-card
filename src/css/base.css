@@ -1,23 +1,24 @@
 :root {
-  --color-bg: #1A1A1A;
-  --color-card: #EBEBEB;
-  --color-text: #1A1A1A;
+  --dark-1: #1A1A1A;
+  --bright-1: #EBEBEB;
+  --border-radius: 12px;
   --spacing-xs: 8px;
   --spacing-sm: 16px;
   --spacing-md: 32px;
-  --border-card: 12px;
-  --border-subtle: rgba(25.5, 25.5, 25.5, 0.2);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html, body {
+  background: var(--dark-1);
+  color: var(--dark-1)
 }
 
-body, html {
-  height: 100%;
-  font-family: 'Martian Mono', monospace;
-  font-weight: 200;
-  background: var(--color-bg);
+@media (max-width: 1024px) {
+  html, body {
+    background: var(--bright-1);
+  }
+}
+
+.row {
+  display: flex;
+  align-items: start;
 }

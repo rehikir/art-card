@@ -1,0 +1,9 @@
+.tip {
+    display: flex;
+    align-items: center;
+}
+
+.dash {
+    width: 2rem;
+    color: var(--bright-1)
+}
