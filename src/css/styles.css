@@ -1,130 +1,156 @@
-/* Base reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body, html {
-    height: 100%;
-    font-family: 'Martian Mono', monospace;
-    background: #1A1A1A;
-  }
-  
-  /* Container and layout */
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #1A1A1A;
-  }
-  
-  .card {
-    width: 1024px;
-    height: 640px;
-    background-color: #EBEBEB;
-    padding-bottom: 32px;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
-  
-  /* Header styling */
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-  }
-  
-  .title {
-    font-size: 67px;
-    color: #1A1A1A;
-    font-weight: 200;
-  }
-  
-  .title {
-    font-size: 67px;
-    color: #1A1A1A;
-    font-weight: 200;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .row {
-    display: flex;
-    gap: 8px;
-  }
-  
-  .round {
-    border-radius: 50%;
-  }
-  
-  .small-round {
-    width: 10px;
-    height: 10px;
-  }
-  
-  .small-round-2 {
-    width: 5px;
-    height: 5px;
-  }
-  
-  /* Sections */
-  .works, .info, .request {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  
-  .section-title {
-    font-size: 16px;
-    color: #1A1A1A;
-    font-weight: 200;
-  }
-  
-  .link-item {
-    display: flex;
-    align-items: center;
-    background: #EBEBEB;
-    padding: 8px;
-    border-left: 1px solid rgba(25.5, 25.5, 25.5, 0.2);
-    border-bottom: 1px solid rgba(25.5, 25.5, 25.5, 0.2);
-    gap: 8px;
-  }
-  
-  .link-item .icon {
-    width: 30px;
-    height: 30px;
-  }
-  
-  .link-item .link {
-    font-size: 28px;
-    color: #1A1A1A;
-    font-weight: 200;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-  
-  .link-item .link:hover {
-    color: #EBEBEB;
-  }
-  
-  /* Request Art section */
-  .request-status {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  
-  .status-title {
-    font-size: 67px;
-    color: #1A1A1A;
-    font-weight: 200;
-  }
-  
-  .status-message {
-    font-size: 67px;
-    color: #1A1A1A;
-    font-weight: 200;
-  }
-  
+h1, h2, h3, h4, h5, h6, p, a {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  height: fit-content;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 200;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Martian Mono', monospace;
+  font-weight: 200;
+  background: #1A1A1A;
+}
+
+/* Container and layout */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1A1A1A;
+}
+
+.card {
+  width: 1024px;
+  height: 640px;
+  background-color: #EBEBEB;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Header styling */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.title {
+  margin: 0;
+  font-size: 67px;
+  color: #1A1A1A;
+  line-height: 0.85;
+  padding-top: 0.1em;
+}
+
+.row {
+  width: 100%;
+  padding-right: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+/* Sections */
+.works, .info, .request {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.section-title {
+  font-size: 16px;
+  color: #1A1A1A;
+  font-weight: 200;
+  margin-bottom: 8px;
+  line-height: 0.9;
+  height: fit-content;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  background: #EBEBEB;
+  padding: 8px;
+  border-left: 1px solid rgba(25.5, 25.5, 25.5, 0.2);
+  border-bottom: 1px solid rgba(25.5, 25.5, 25.5, 0.2);
+  gap: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.link-item:last-child {
+  margin-bottom: 0;
+}
+
+.link-item .icon {
+  width: 30px;
+  height: 30px;
+}
+
+.link-item .link {
+  font-size: 28px;
+  color: #1A1A1A;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 0.9;
+  display: inline-block;
+}
+
+.link-item .link:hover {
+  color: #EBEBEB;
+}
+
+/* Inline links in info section */
+.inline-links .link-item {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 0;
+}
+
+.inline-links .link-item:last-child {
+  margin-right: 0;
+}
+
+/* Request Art section */
+.request-status {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.status-title {
+  font-size: 67px;
+  color: #1A1A1A;
+  font-weight: 200;
+  margin-bottom: 0.25rem;
+  line-height: 0.85;
+  height: fit-content;
+}
+
+.status-message {
+  font-size: 67px;
+  color: #1A1A1A;
+  font-weight: 200;
+  line-height: 0.85;
+  height: fit-content;
+}
